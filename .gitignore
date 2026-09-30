@@ -1,0 +1,4 @@
+# Local credentials and generated Python files
+.env
+**/__pycache__/
+**/*.py[cod]

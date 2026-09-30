@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+# 실험용: 소스 코드가 바뀔 때마다 의존성 설치 레이어도 다시 실행됩니다.
+COPY . .
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "app.py"]

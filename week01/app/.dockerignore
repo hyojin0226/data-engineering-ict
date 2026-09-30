@@ -1,0 +1,9 @@
+# 빌드 컨텍스트에서 제외할 파일
+Dockerfile.bad
+Dockerfile.fat
+Dockerfile.multi
+Dockerfile.save
+__pycache__/
+*.pyc
+.git/
+*.log
