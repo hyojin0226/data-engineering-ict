@@ -33,6 +33,10 @@ def check_robots() -> tuple[bool, float]:
         headers={"User-Agent": USER_AGENT},
         timeout=TIMEOUT_SEC,
     )
+    if response.status_code == 404:
+        print("robots.txt가 HTTP 404입니다. 정책 파일이 없어 1초 간격으로 진행합니다.")
+        return True, DELAY_SEC
+
     response.raise_for_status()
 
     parser = RobotFileParser()

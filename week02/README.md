@@ -65,7 +65,7 @@ python check_robots.py
 python crawler_pipeline.py
 ```
 
-크롤러는 User-Agent를 보내고, robots.txt에서 더 긴 간격을 요구하면 그 간격을 따릅니다. robots.txt에 별도 간격이 없으면 페이지 요청 사이에 1초 쉽니다.
+크롤러는 User-Agent를 보내고, robots.txt에서 더 긴 간격을 요구하면 그 간격을 따릅니다. 현재 quotes.toscrape.com의 robots.txt는 HTTP 404를 반환하므로 정책 파일이 없는 경우로 처리하고, 페이지 요청 사이에 최소 1초 쉽니다. 5xx나 네트워크 오류에서는 안전을 위해 실행을 멈춥니다.
 
 ## 예상 결과 확인
 
