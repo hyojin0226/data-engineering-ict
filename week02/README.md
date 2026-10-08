@@ -5,6 +5,7 @@
 | 파일 | 설명 |
 |---|---|
 | [ERD_설계서.md](ERD_설계서.md) | 쇼핑몰 4개 테이블의 ERD, 관계, 정규화와 반정규화 근거 |
+| [ERD.png](ERD.png) | 설계서에 삽입한 ERD 제출 이미지 |
 | [check_robots.py](check_robots.py) | 크롤링 전에 robots.txt 허용 여부 확인 |
 | [crawler_pipeline.py](crawler_pipeline.py) | fetch → parse → load 3단계 크롤링 |
 | [schema.sql](schema.sql) | 중복 방지 제약이 있는 `quotes` 테이블 생성 |
